@@ -1,0 +1,61 @@
+table {
+  font: 100% sans-serif;
+  empty-cells: show;
+  border: 1px solid black;
+}
+
+table > caption {
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+/* basic shared rules */
+table th,
+table td {
+  text-align: right;
+  padding-right: .5em;
+  border: 1px solid black;
+}
+
+/* header */
+table > thead > tr:first-child > th {
+  text-align: center;
+}
+
+table > tbody > tr > th {
+  font-style: italic;
+  font-weight: normal;
+}
+
+table > tbody > tr > td:nth-child(2) {
+  color: red;
+}
+table > tbody > tr > td:nth-child(4) {
+  color: blue;
+}
+
+table > tbody > tr:nth-child(odd) > td {
+  background-color: #99FF99;
+}
+
+table > tbody > tr:nth-child(even) > td{
+  background-color: #cee;
+}
+
+dt:hover + dd {background-color: purple;}
+
+.outer-container{
+  position: relative;
+  width: 75%;
+  margin-top: 20px;
+  background-color: #FF9999;
+}
+
+.inner-container{
+  position: relative;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  background-color: blue;
+  text-align: center;
+}
